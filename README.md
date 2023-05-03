@@ -1,1 +1,1 @@
-# pythonPracticeDev
+# pythonStudy
