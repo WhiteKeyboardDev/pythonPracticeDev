@@ -3,7 +3,7 @@ import easyocr
 from PIL import Image, ImageDraw, ImageFont
 
 def init():
-    image_folder_path = "C:\Users\1234\Desktop\000-testData\png\not_trained"
+    image_fold_path = "C:\Users\1234\Desktop\000-testData\png\not_trained"
     ko_font_path = 'C:/Users/1234/Desktop/000-testData/installedForEasyOCR/나눔 글꼴/나눔고딕/NanumFontSetup_TTF_GOTHIC/NanumGothic.ttf'
 
     reader = easyocr.Reader(['en', 'ko'], gpu=False)
@@ -11,7 +11,7 @@ def init():
     font_size = 35
     font = ImageFont.truetype(ko_font_path, font_size, encoding="UTF-8")
 
-    for image in os.listdir(image_path):
+    for image in os.listdir(image_fold_path):
         image_path = os.path.join(image_path, image)
         if os.path.isfile(image_path):
             result = reader.readtext(image_path)
