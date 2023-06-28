@@ -3,8 +3,8 @@ import easyocr
 from PIL import Image, ImageDraw, ImageFont
 
 def init():
-    image_fold_path = "C:\Users\1234\Desktop\000-testData\png\not_trained"
-    ko_font_path = 'C:/Users/1234/Desktop/000-testData/installedForEasyOCR/나눔 글꼴/나눔고딕/NanumFontSetup_TTF_GOTHIC/NanumGothic.ttf'
+    image_fold_path = "C:/Users/1234/Desktop/000-testData/ForEasyOCR/png/001-not_trained"
+    ko_font_path = 'C:/Users/1234/Desktop/000-testData/ForEasyOCR/나눔 글꼴/나눔고딕/NanumFontSetup_TTF_GOTHIC/NanumGothic.ttf'
 
     reader = easyocr.Reader(['en', 'ko'], gpu=False)
 

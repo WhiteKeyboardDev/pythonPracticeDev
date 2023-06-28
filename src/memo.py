@@ -1,7 +1,10 @@
 def run():
-    TestList = [1, 2, 3, 4, 5]
-    TestList = list(map(lambda num: num + 100, TestList))
-    print(TestList)
+    a = 100
+    result = 0
+    for i in range(1, 3):
+        result = a >> i
+        result = result + 1
+    print(result)
 
 if __name__ == '__main__':
     run();
