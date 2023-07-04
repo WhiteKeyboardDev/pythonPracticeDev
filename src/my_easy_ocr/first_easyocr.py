@@ -1,6 +1,6 @@
 import easyocr
 
-
+# 아주 간단한 1개에 한해서 텍스트한 파일을 생성하는 것.
 def init():
     # OCR 모델을 초기화합니다.
     reader = easyocr.Reader(['en'])

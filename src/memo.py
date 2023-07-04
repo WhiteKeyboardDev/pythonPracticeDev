@@ -1,10 +1,15 @@
+
+
+
+
+
+
+
+
 def run():
-    a = 100
-    result = 0
-    for i in range(1, 3):
-        result = a >> i
-        result = result + 1
-    print(result)
+    a, b = 100, 200
+    print(a == b)
+
 
 if __name__ == '__main__':
     run();
