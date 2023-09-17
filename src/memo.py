@@ -1,15 +1,8 @@
-
-
-
-
-
-
-
-
 def run():
-    a, b = 100, 200
-    print(a == b)
-
+    a = "REMEMBER NOVEMBER"
+    b = a[:3] + a[12:16];
+    c = " %s R AND" % "STR";
+    print(b + c);
 
 if __name__ == '__main__':
     run();
